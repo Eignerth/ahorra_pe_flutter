@@ -56,7 +56,6 @@ class _FrmRegisterState extends State<FrmRegister> {
       key: _formKey,
       child: Column(
         children: <Widget>[
-          Text('${widget.goal_id}'),
           Container(
             margin: EdgeInsets.symmetric(vertical: 10),
             padding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),

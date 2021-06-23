@@ -171,6 +171,7 @@ class _FormRegisterState extends State<FormRegister> {
           builder: (_) => ErrorDialog(response)
       );
     }else{
+      print(body);
       Navigator.of(context).pushNamedAndRemoveUntil("/home", (route) => false);
     }
   }

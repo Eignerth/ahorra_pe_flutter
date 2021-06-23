@@ -102,6 +102,7 @@ class HomeActivity extends StatefulWidget {
 
 class _HomeActivityState extends State<HomeActivity> {
   List<dynamic> response=[];
+
   @override
   Widget build(BuildContext context) {
     goalList();
@@ -131,8 +132,9 @@ class _HomeActivityState extends State<HomeActivity> {
     var body = jsonDecode(res.body);
     Map<String, dynamic> rpta = body;
     if(rpta['status']==0){
+      print(rpta['response']);
       setState(() {
-        response = rpta['response'];        
+        response = rpta['response'];
       });
     }else{
       closeSession(context);

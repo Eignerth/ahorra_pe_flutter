@@ -83,11 +83,11 @@ class PrinciaplActivity extends StatelessWidget {
 }
 
 void _goLogin(BuildContext context){
-  Navigator.of(context).pushNamedAndRemoveUntil("/login", (route) => false);
+  Navigator.of(context).pushNamed("/login");
 }
 
 void _goLogout(BuildContext context){
-  Navigator.of(context).pushNamedAndRemoveUntil("/logout", (route) => false);
+  Navigator.of(context).pushNamed("/logout");
 }
 
 
